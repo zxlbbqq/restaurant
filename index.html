@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Claude Monet</title>
+</head>
+<header>
+    <div class="parentforheader">
+        <div class="divforheader1">
+            <div class="logofull">
+                <a href="index.html">Claude Monet</a>
+            </div>
+        </div>
+        <div class="divforheader2"><a href="index.html">Главная</a></div>
+        <div class="divforheader3"><a href="menu.html">Меню</a></div>
+        <div class="divforheader4"><a href="Contacts.html">Контакты</a></div>
+    </div>
+</header>
+<body>
+
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="Video/bg restaurant.mp4" type="video/mp4"></source>
+    </video>
+    
+    <div class="aboutuscontainer">
+        <div class="parentforaboutus">
+            <div class="aboutustittle"><div class="divforaboutustitle"><h2>Описание</h2></div></div>
+            <div class="aboutustext">
+                <h3>Ресторан “Вкусный рай” предлагает изысканные блюда, приготовленные из свежих ингредиентов, уютную атмосферу и высокий уровень сервиса. Мы предлагаем широкий выбор блюд и напитков, а наши бармены являются мастерами своего дела. Посетите нас, и вы почувствуете себя особенным гостем.</h3>
+            </div></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="btnn">
+            <button class="buttonn" id="mybutton">ЗАБРОНИРОВАТЬ СТОЛИК</button>
+        </div>
+    </div>
+
+    <div id="myModall" class="modall">
+        <div class="modall-content">
+          <span class="closee">&times;</span>
+            <div class="formdate">
+                <form class = "flex">
+                    <p style="padding-right: 10px;">
+                        <label for="localdate">Дата: </label>
+                        <input name="date-control" type="date">
+                    </p>
+                    <p style="padding-right: 10px; padding-left: 30px;">
+                        <label for="time">Время: </label>
+                        <input type="time" id="time" name="time"/>
+                    </p>
+                    <p style="padding-right: 10px; padding-left: 30px;">Количество персон</p>
+                    <div class="number" data-step="1" data-min="1" data-max="100">
+                        <input class="number-text" type="text" name="count" value="1">
+                        <a href="#" class="number-minus">−</a>
+                        <a href="#" class="number-plus">+</a>
+                    </div>
+                </form>
+                <div class="formsend"><button class="send" type="submit">Отправить</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="gallerycontainer">
+        <div class="parentforgallery">
+            <div class="gallerypadding"><div class="divforgallerytitle"><h2>Галерея</h2></div></div>
+            <div class="divforgallery">
+                <div class="gallery">
+                    <img src="Images/gallery/1.jpg" alt="Изображение 1" class="image">
+                    <img src="Images/gallery/2.jpg" alt="Изображение 2" class="image">
+                    <img src="Images/gallery/3.jpg" alt="Изображение 3" class="image">
+                    <img src="Images/gallery/4.jpg" alt="Изображение 4" class="image">
+                    <img src="Images/gallery/5.jpg" alt="Изображение 5" class="image">
+                    <img src="Images/gallery/6.jpg" alt="Изображение 6" class="image">
+                    <img src="Images/gallery/7.jpg" alt="Изображение 7" class="image">
+                    <img src="Images/gallery/8.jpg" alt="Изображение 8" class="image">
+                </div>
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modalcontent" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerforhome">
+        <div class="footer">© 2023 Claude Monet Project</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
